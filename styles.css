@@ -144,49 +144,57 @@ header {
     display: none;
 }
 
-.carrusel-container {
-    position: relative;
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    background-color: #eaeaea;
+/* --- SECCIÓN HERO DE HISTORIA / TALLER --- */
+.story-hero {
+    /* Imagen de fondo cálida que representa el taller o ambiente casero */
+    background: linear-gradient(rgba(74, 62, 61, 0.4), rgba(74, 62, 61, 0.4)), url('https://images.unsplash.com/photo-1570824104453-508955ab713e?auto=format&fit=crop&w=1200&q=80') center/cover;
+    background-attachment: fixed; /* Efecto creativo Parallax al hacer scroll */
+    padding: 6rem 2rem;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 0;
 }
 
-.carrusel-slide {
-    display: none;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.story-content {
+    background-color: rgba(253, 251, 247, 0.95); /* Fondo hueso semi-transparente */
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    max-width: 700px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-.carrusel-slide.active {
-    display: block;
+.story-content h2 {
+    font-size: 2.5rem;
+    color: var(--color-texto);
+    margin-bottom: 1rem;
 }
 
-.carrusel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    z-index: 10;
-    display: none; /* Se activa con JS cuando hay imágenes */
+.story-content p {
+    font-size: 1.1rem;
+    color: var(--color-texto);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
 }
 
-.carrusel-btn:hover {
-    background-color: var(--color-blanco);
-    transform: translateY(-50%) scale(1.05);
+.story-content .signature {
+    font-family: var(--fuente-titulos);
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--color-principal);
+    margin-bottom: 0;
+}
+
+/* Optimización para pantallas pequeñas de celulares */
+@media (max-width: 768px) {
+    .story-hero {
+        background-attachment: scroll; /* Desactiva el efecto fijo en móviles para mejor rendimiento */
+        padding: 4rem 1rem;
+    }
+    .story-content h2 {
+        font-size: 2rem;
+    }
 }
 
 .prev-btn { left: 15px; }
