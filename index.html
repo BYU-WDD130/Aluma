@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluma | Velas Artesanales y Acogedoras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">ALUMA</a>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#productos">Colecciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Luz que abraza tu hogar</h1>
+        <p>Velas 100% artesanales, hechas a mano con ceras naturales y aromas que transforman tus espacios en refugios de paz.</p>
+        <a href="#productos" class="btn">Ver Colección</a>
+    </section>
+
+    <section class="galeria-section" id="galeria">
+        <h2>Nuestro Taller & Procesos</h2>
+        <p class="subtitulo">Sube las fotos de tus creaciones para mostrarlas en el carrusel principal.</p>
+        
+        <label class="uploader-box">
+            <span>Click aquí para seleccionar y subir tus imágenes 📸</span>
+            <input type="file" id="image-input" accept="image/*" multiple>
+        </label>
+
+        <div class="carrusel-container" id="carrusel">
+            <p class="no-images-msg" id="placeholder-text">Aún no has subido imágenes. ¡Selecciona algunas arriba!</p>
+            <button class="carrusel-btn prev-btn" id="prev-btn">&#10094;</button>
+            <button class="carrusel-btn next-btn" id="next-btn">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="productos-section" id="productos">
+        <h2 class="titulo-productos">Nuestras Líneas Destacadas</h2>
+        <div class="productos-grid">
+            
+            <div class="producto-card">
+                <div class="producto-img" style="background-image: url('https://images.unsplash.com/photo-1596435707260-ce7103429940?auto=format&fit=crop&w=400&q=80');"></div>
+                <h3>Línea Botánica</h3>
+                <p class="producto-desc">Con flores secas y aceites esenciales de lavanda y eucalipto.</p>
+                <span class="price">$15.00</span>
+            </div>
+
+            <div class="producto-card">
+                <div class="producto-img" style="background-image: url('https://images.unsplash.com/photo-1602872030219-c16779d7d478?auto=format&fit=crop&w=400&q=80');"></div>
+                <h3>Esencias de Invierno</h3>
+                <p class="producto-desc">Notas de canela, vainilla y madera de pino para calentar el alma.</p>
+                <span class="price">$18.00</span>
+            </div>
+
+            <div class="producto-card">
+                <div class="producto-img" style="background-image: url('https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=400&q=80');"></div>
+                <h3>Minimalista Cera de Soya</h3>
+                <p class="producto-desc">Envases de vidrio reutilizables con un quemado limpio y duradero.</p>
+                <span class="price">$12.00</span>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <p>&copy; 2026 ALUMA - Velas Hechas con Amor. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
