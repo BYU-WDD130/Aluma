@@ -264,10 +264,49 @@ header {
 }
 
 /* --- FOOTER --- */
+/* --- FOOTER Y SECCIÓN DE CONTACTO --- */
 footer {
-    background-color: var(--color-texto);
+    background-color: var(--color-texto); /* Marrón oscuro / Carbón */
     color: var(--color-fondo);
-    text-align: center;
-    padding: 2rem;
+    padding: 4rem 2rem 1.5rem 2rem;
     margin-top: 4rem;
 }
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid rgba(253, 251, 247, 0.1);
+    padding-bottom: 2.5rem;
+}
+
+.footer-info {
+    max-width: 500px;
+}
+
+.footer-info h3 {
+    font-size: 1.8rem;
+    color: var(--color-secundario); /* Crema cálido */
+    margin-bottom: 0.8rem;
+}
+
+.footer-info p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.footer-info .phone-number {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    color: var(--color-blanco);
+}
+
+.footer-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;}
