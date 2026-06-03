@@ -186,6 +186,124 @@ header {
     margin-bottom: 0;
 }
 
+/* --- FOOTER PROFESIONAL Y DELICADO --- */
+footer {
+    background-color: #3D3332; /* Un marrón carbón un poco más profundo y elegante */
+    color: #FDFBF7;
+    padding: 5rem 2rem 2rem 2rem;
+    margin-top: 5rem;
+    font-size: 0.95rem;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    border-bottom: 1px solid rgba(253, 251, 247, 0.08);
+    padding-bottom: 3rem;
+}
+
+/* Columna de la Marca */
+.footer-brand .footer-logo {
+    font-family: var(--fuente-titulos);
+    font-size: 1.8rem;
+    color: var(--color-principal);
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.footer-brand .footer-tagline {
+    font-style: italic;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+/* Columna de Información Central */
+.footer-middle h4 {
+    font-family: var(--fuente-titulos);
+    font-size: 1.2rem;
+    color: var(--color-secundario);
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+.footer-middle p {
+    opacity: 0.85;
+    margin-bottom: 0.4rem;
+}
+
+.footer-phone {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Columna de Botones (Acciones) */
+.footer-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+/* Estilo base para botones delicados */
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 50px; /* Bordes completamente redondeados, más estilizados */
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-action .icon {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Botón de línea/contorno (Llamar) */
+.btn-line {
+    color: #FDFBF7;
+    border: 1px solid rgba(253, 251, 247, 0.3);
+    background: transparent;
+}
+
+.btn-line:hover {
+    border-color: var(--color-principal);
+    color: var(--color-principal);
+    background-color: rgba(212, 163, 115, 0.05);
+}
+
+/* Botón sólido elegante (WhatsApp Verde Oliva/Salvia) */
+.btn-solid {
+    background-color: #6B7A65; /* Verde sofisticado, nada chillón */
+    color: #FDFBF7;
+    border: 1px solid transparent;
+}
+
+.btn-solid:hover {
+    background-color: #586553;
+    transform: translateY(-1px); /* Sutil efecto de elevación */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Créditos finales */
+.footer-bottom {
+    text-align: center;
+    max-width: 1100px;
+    margin: 2rem auto 0 auto;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    letter-spacing: 0.5px;
+}
+
 /* Optimización para pantallas pequeñas de celulares */
 @media (max-width: 768px) {
     .story-hero {
@@ -263,50 +381,18 @@ header {
     font-size: 1.1rem;
 }
 
-/* --- FOOTER --- */
-/* --- FOOTER Y SECCIÓN DE CONTACTO --- */
 footer {
-    background-color: var(--color-texto); /* Marrón oscuro / Carbón */
-    color: var(--color-fondo);
-    padding: 4rem 2rem 1.5rem 2rem;
-    margin-top: 4rem;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    border-bottom: 1px solid rgba(253, 251, 247, 0.1);
-    padding-bottom: 2.5rem;
-}
-
-.footer-info {
-    max-width: 500px;
-}
-
-.footer-info h3 {
-    font-size: 1.8rem;
-    color: var(--color-secundario); /* Crema cálido */
-    margin-bottom: 0.8rem;
-}
-
-.footer-info p {
-    font-size: 1rem;
-    opacity: 0.9;
-}
-
-.footer-info .phone-number {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-top: 0.8rem;
-    color: var(--color-blanco);
-}
-
-.footer-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;}
+        padding: 4rem 1.5rem 2rem 1.5rem;
+    }
+    .footer-container {
+        gap: 2rem;
+        text-align: center;
+    }
+    .footer-actions {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn-action {
+        flex: 1;
+        max-width: 180px;
+    }
